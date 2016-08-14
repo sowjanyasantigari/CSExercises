@@ -20,14 +20,23 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            double d;
+
+            string result;
+            Console.WriteLine("Enter any number to find squareroot to three decimals");
+            d = Convert.ToDouble(Console.ReadLine());
+            result = SQRT(d);
+            Console.WriteLine("The squareroot of {0} to three decimals is {1}", d, result);
         }
 
         public static string SQRT(double x)
         {
+            string result;
+            result = string.Format("{0:0.000}", Math.Sqrt(x));
+
             //YOUR CODE HERE: return the square root of x and then use String.Format 
             //to format it. The format is similar to WriteLine
-            return null;
+            return result;
 
         }
     }

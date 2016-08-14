@@ -13,13 +13,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            double d;
+            double result;
+            Console.WriteLine("Enter double precision number to find squareroot");
+            d = Convert.ToDouble(Console.ReadLine());
+
+            result = SQRT(d);
+            Console.WriteLine("Square root of the {1} is {0}", result, d);
         }
 
         public static double SQRT(double x)
         {
-            //YOUR CODE HERE: return the square root of x
-            return 0;
+            double result;
+            result = Math.Sqrt(x);
+            return result;
 
         }
     }

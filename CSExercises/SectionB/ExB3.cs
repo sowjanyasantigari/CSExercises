@@ -16,15 +16,40 @@ namespace CSExercises
 
     public class ExB3
     {
+        
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+
+            string salaryStr;
+
+            Console.WriteLine("Enter salary");
+            salaryStr = Console.ReadLine();
+
+            CalculateIncome( salaryStr);
+
+
+            
+            
 
         }
 
         public static string CalculateIncome(string salaryStr)
         {
-            //YOUR CODE HERE
+            double totalsalary;
+            double salary;
+            double housingallowance;
+            double  transport;
+            
+            salary = Convert.ToDouble(salaryStr);
+
+            housingallowance = (salary / 100) * 10;
+                transport = (salary / 100) * 3;
+            
+            totalsalary = salary + housingallowance + transport;
+
+            Console.WriteLine("The housing allowance is {0}", housingallowance);
+            Console.WriteLine("The transport allowance is {0}", transport);
+            Console.WriteLine("The total salary is {0:$#,##0.00}", totalsalary);
             return null;
         }
     }

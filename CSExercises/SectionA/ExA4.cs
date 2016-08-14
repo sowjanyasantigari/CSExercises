@@ -15,13 +15,21 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //PUT YOUR CODE HERE           
+            double d;
+            double result;
+            Console.WriteLine("Enter a precision number to find square of the number");
+            d = Convert.ToDouble(Console.ReadLine());
+
+            result = square(d);
+            Console.WriteLine("Square of the input number is {0} ", result);
         }
 
         public static double square(double x)
         {
-            //PUT YOUR CODE HERE
-            return 0;
+            double result;
+            result = x * x;
+
+            return result;
 
         }
     }

@@ -20,10 +20,15 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            string inputStr = Console.ReadLine();
-            double inputDbl = Convert.ToDouble(inputStr);
+            decimal d;
+            decimal result;
+            Console.WriteLine("Enter any precision number");
+            d = Convert.ToDecimal(Console.ReadLine());
 
-            //YOUR CODE HERE
+            result = Math.Round(d, 2);
+
+            Console.WriteLine("Entered number is rounded to two decimal points as {0}", result);
+
 
         }
 

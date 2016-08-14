@@ -15,13 +15,23 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            double mtotalfare;
+            double distanceTravelled;
+            Console.WriteLine("Enter the distance travelled in kilometers");
+            distanceTravelled = Convert.ToDouble(Console.ReadLine());
+            mtotalfare = CalculateFare(distanceTravelled);
+            Console.WriteLine(" The total fare for the distance travelled is ${0:0.0}", mtotalfare);
+
         }
 
         public static double CalculateFare(double distance)
         {
-            //YOUR CODE HERE
-            return 0;
+            double ftotalfare;
+            const double fixedcharge = 2.40;
+            const double additionalfare = 0.4;
+            ftotalfare = fixedcharge + distance * additionalfare;
+
+            return ftotalfare;
 
         }
     }
